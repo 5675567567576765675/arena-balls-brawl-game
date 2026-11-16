@@ -3,25 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arena Ball Brawl</title>
+    <meta name="theme-color" content="#080d1b" />
+    <title>Orbital Brawl</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <canvas id="gameCanvas" width="1000" height="620"></canvas>
-
-    <div id="hud" class="hidden">
-      <div class="health left">
-        <div class="health-fill"></div>
-      </div>
-      <div class="health right">
-        <div class="health-fill"></div>
-      </div>
-    </div>
-
-    <div id="menu" class="visible">
-      <button id="playButton">Play</button>
-    </div>
-
+    <main id="stage">
+      <canvas id="gameCanvas" width="1000" height="620" aria-label="Orbital Brawl arena"></canvas>
+      <section id="menu" aria-label="Choose a game mode">
+        <div class="menu-card">
+          <div class="eyebrow">A chaotic arena brawler</div>
+          <h1>ORBITAL <span>BRAWL</span></h1>
+          <p>Pick a mode. The fighters handle the rest.</p>
+          <div class="mode-grid">
+            <button class="mode-button" data-mode="2v2"><b>2 vs 2</b><small>Team battle</small></button>
+            <button class="mode-button" data-mode="ffa3"><b>3 BALL FFA</b><small>Every orb for itself</small></button>
+            <button class="mode-button" data-mode="ffa4"><b>4 BALL FFA</b><small>Full arena chaos</small></button>
+          </div>
+          <div class="menu-hint">Every fighter has a unique weapon and automatic ability</div>
+        </div>
+      </section>
+      <div id="match-banner" aria-live="polite"></div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
