@@ -1,12 +1,5 @@
 # Orbital Brawl
 
-Open `index.html` in a browser to play.
+Open `index.html` in a browser. Choose 2v2, 3-ball FFA, or 4-ball FFA.
 
-Choose one of three modes from the menu:
-- **2 vs 2** team battle
-- **3 Ball FFA**
-- **4 Ball FFA**
-
-There are twelve distinct fighters with custom designs, weapons, and automatic abilities. **Hex** is the summoner: its ability calls up to three homing wisps that attack opposing fighters. The battle ends when one team remains or one FFA fighter is left standing.
-
-For a local server, run `python -m http.server 8000` in this folder and visit `http://localhost:8000`.
+This single-file game includes 12 fighters, distinct weapon designs, automatic fighter abilities, flashy combat effects, and Hex the summoner with homing wisps. The animation loop is guarded so a runtime error is logged and recovered rather than leaving the game frozen.
